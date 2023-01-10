@@ -6,6 +6,7 @@
     border-radius: 50pc;
     background:fixed;
     background-size: 75vw 85vh;
+    max-width: fit-content;
     
 }
 #topbar{
