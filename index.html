@@ -8,13 +8,45 @@
     <link rel="stylesheet" href="RGB.css">
 </head>
 <body id="BODY">
-    <div id="topbar">
-        <div>
-            <a href="login.html" id="login" target=""><h3>Login</h3></a>
-        </div>
-    </a>
-        <center><h1 id="Note">📃NotePad📝</h1><br></center>
+    <div>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0px;
+                overflow: hidden;
+                background-color: lightgray;
+                }
+            li {
+                float: left;
+                }
+
+            li a {
+                display: block;
+                color: rgb(47, 0, 255);
+                font-size:20px;
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+                }
+    .active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+</style>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="https://www.youtube.com/channel/UCO_QLPsMGkoLor7ovwHPwBQ/featured">Youtube(@rider_devil)</a></li>
+  <li><a href="https://www.youtube.com/@user-learn24X7?app=desktop">YouTube(@learn)</a></li>
+  <li id="login"><a href="./login.html">Login</a></li>
+</ul>
     </div>
+
+
     <div id="div">
         <center>
             <div>
