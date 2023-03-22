@@ -50,19 +50,32 @@ button:hover {
 </head>    
 <body>    
     <center> <h1> User Login Form </h1> </center>   
-    <form>  
+    <form onsubmit="data_get()">  
         <div class="container">   
             <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
+            <input type="text" placeholder="Enter Username" name="username" id="username">  
+
             <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
+            <input type="password" placeholder="Enter Password" name="password" id="password">  
+
+            <!-- <input type="submit" value="SignUp"> -->
             <button href="type="submit">Login</button>   
+            
             <input type="checkbox" checked="checked"> Remember me   
             <button type="button" class="cancelbtn"> Cancel</button><br>
             Forgot <a href="#"> password? </a><br>
             Back to NotePad <a href="index.html" target="">Back</a>
             </a>
         </div>   
-    </form>     
+    </form>  
+    <script>
+        function data_get(){
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            
+            document.write(username);
+            document.write(password);
+        }
+    </script>
 </body>     
 </html>  
